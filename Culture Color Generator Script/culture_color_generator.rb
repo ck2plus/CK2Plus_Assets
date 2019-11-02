@@ -57,46 +57,41 @@ def create_image(colors)
     image
 end
 
-def get_colors(min_lightness:, max_lightness:, n_lightness:, n_hue:, saturation:, hue:, hue_variation:, **options)
-  max_lightness = max_lightness.clamp(0.0, 1.0)
-  min_lightness = min_lightness.clamp(0.0, 1.0)
-  lightness_diff = (max_lightness - min_lightness)
-  lightness_diff /= (n_lightness - 1).to_f unless n_lightness <= 1
-  lightnesses = n_lightness.times.map{|i| min_lightness + lightness_diff * i}
-
-  hue = hue.abs % 360
-  hue_variation = hue_variation.abs
-  hues = []
-  hues += (-(n_hue / 2).floor).upto(-1).map{|i| ((i - 1) * hue_variation + hue) % 360.0}
-  hues << hue
-  hues += 1.upto((n_hue / 2).floor).map{|i| ((i + 1) * hue_variation + hue) % 360.0}
+def get_colors(lightness:, lightness_variance:, lightness_levels:, hue_levels:, saturation:, hue:, hue_variance:, **options)
+  min_lightness = lightness_levels <= 1 ? lightness : (lightness - (lightness_variance * ((lightness_levels - 1) / 2.0).ceil)).clamp(0.0, 1.0)
+  min_hue = hue_levels <= 1 ? hue : (hue - (hue_variance * ((hue_levels - 1) / 2.0).ceil)) % 360
   
+  lightnesses = lightness_levels.times.map{|i| (min_lightness + lightness_variance * i).clamp(0.0, 1.0)}
+  hues = hue_levels.times.map{|i| (min_hue + hue_variance * i) % 360 }
   saturation = saturation.abs.clamp(0.0, 1.0)
+  
+  puts hues
+  puts hue_levels
   
   hues.product(lightnesses).map{|h, l| [h, saturation * 255, l * 255]}
 end
 
 def get_options
   options = {
-    n_hue: 1,
-    n_lightness: 13,
+    hue_levels: 1,
+    lightness_levels: 10,
     saturation: 0.5,
     hue: 0.0,
-    hue_variation: 10.0,
-    min_lightness: 0.2,
-    max_lightness: 0.8,
+    hue_variance: 5.0,
+    lightness: 0.5,
+    lightness_variance: 0.1,
     filename: 'out.png'
   }
   OptionParser.new do |opts|
     [
-      ['hue',             'base hue',                         :to_f],
-      ['n_lightness',     'number of lightness levels',       :to_i],
-      ['n_hue',           'number of hue levels',             :to_i],
-      ['saturation',      'saturation',                       :to_f],
-      ['hue_variation',   'variation in hue between levels',  :to_f],
-      ['min_lightness',   'minimum lightness',                :to_f],
-      ['max_lightness',   'maximum lightness',                :to_f],
-      ['filename',        'filename',                         :to_s]
+      ['hue',                 'base hue',                               :to_f],
+      ['hue_levels',          'number of hue levels',                   :to_i],
+      ['hue_variance',        'variation in hue between levels',        :to_f],
+      ['lightness',           'base lightness',                         :to_f],
+      ['lightness_levels',    'number of lightness levels',             :to_i],
+      ['lightness_variance',  'variation in lightness between levels',  :to_f],
+      ['saturation',          'saturation',                             :to_f],
+      ['filename',            'filename',                               :to_s]
     ].each do |long_name, desc, method|
       opts.on("--#{long_name}=#{long_name.upcase}", desc) do |val|
         options[long_name.to_sym] = val.send(method)
