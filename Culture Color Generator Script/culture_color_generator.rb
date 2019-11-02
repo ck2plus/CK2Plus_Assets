@@ -80,7 +80,7 @@ def get_options
     hue_variance: 5.0,
     lightness: 0.5,
     lightness_variance: 0.1,
-    filename: 'out.png'
+    filename: 'out'
   }
   OptionParser.new do |opts|
     [
@@ -105,5 +105,5 @@ if __FILE__ == $0
   options = get_options
   colors = get_colors(options)
   image = create_image(colors)
-  image.write(options[:filename])
+  image.write(options[:filename] + '.png')
 end
