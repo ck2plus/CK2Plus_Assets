@@ -2,6 +2,7 @@
 
 require 'rmagick'
 require 'optparse'
+require 'tinct'
 
 def create_image(colors)
     pixels = colors.map{|h, s, l| Magick::Pixel.from_hsla(h, s, l, 1.0)}
@@ -57,16 +58,18 @@ def create_image(colors)
     image
 end
 
-def get_colors(lightness:, lightness_variance:, lightness_levels:, hue_levels:, saturation:, hue:, hue_variance:, **options)
+def get_colors(target_color:, lightness_levels:, lightness_variance:, hue_levels:, hue_variance:, **options)
+  target_color = Tinct.from_s(target_color)
+  saturation = target_color.saturation
+  hue = target_color.hue * 350
+  lightness = target_color.lightness
+
   min_lightness = lightness_levels <= 1 ? lightness : (lightness - (lightness_variance * ((lightness_levels - 1) / 2.0).ceil)).clamp(0.0, 1.0)
   min_hue = hue_levels <= 1 ? hue : (hue - (hue_variance * ((hue_levels - 1) / 2.0).ceil)) % 360
   
   lightnesses = lightness_levels.times.map{|i| (min_lightness + lightness_variance * i).clamp(0.0, 1.0)}
   hues = hue_levels.times.map{|i| (min_hue + hue_variance * i) % 360 }
   saturation = saturation.abs.clamp(0.0, 1.0)
-  
-  puts hues
-  puts hue_levels
   
   hues.product(lightnesses).map{|h, l| [h, saturation * 255, l * 255]}
 end
@@ -84,13 +87,11 @@ def get_options
   }
   OptionParser.new do |opts|
     [
-      ['hue',                 'base hue',                               :to_f],
+      ['target_color',        'color to base the output around',        :to_s],
       ['hue_levels',          'number of hue levels',                   :to_i],
       ['hue_variance',        'variation in hue between levels',        :to_f],
-      ['lightness',           'base lightness',                         :to_f],
       ['lightness_levels',    'number of lightness levels',             :to_i],
       ['lightness_variance',  'variation in lightness between levels',  :to_f],
-      ['saturation',          'saturation',                             :to_f],
       ['filename',            'filename',                               :to_s]
     ].each do |long_name, desc, method|
       opts.on("--#{long_name}=#{long_name.upcase}", desc) do |val|
