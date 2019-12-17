@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="CK2GraphicsDark" ext="gfx gui map sfx" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="no" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00# 01 02 03 04</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1"></Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open">{</Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close">}</Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open">!</Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close">!!</Keywords>
+            <Keywords name="Keywords1">AND&#x000D;&#x000A;animation&#x000D;&#x000A;additive_modifier&#x000D;&#x000A;allow_property_values&#x000D;&#x000A;arrowType&#x000D;&#x000A;bitmapfont&#x000D;&#x000A;bitmapFont&#x000D;&#x000A;bitmapfonts&#x000D;&#x000A;bitmapFonts&#x000D;&#x000A;browserType&#x000D;&#x000A;chance&#x000D;&#x000A;checkboxType&#x000D;&#x000A;coatOfArmsType&#x000D;&#x000A;CoatOfArmsType&#x000D;&#x000A;corneredTileSpriteType&#x000D;&#x000A;culture&#x000D;&#x000A;editBoxType&#x000D;&#x000A;emblem&#x000D;&#x000A;EMFXActorType&#x000D;&#x000A;eu3dialogtype&#x000D;&#x000A;eu3DialogType&#x000D;&#x000A;frameAnimatedSpriteType&#x000D;&#x000A;guiButtonType&#x000D;&#x000A;guiTypes&#x000D;&#x000A;iconType&#x000D;&#x000A;if_resolution&#x000D;&#x000A;InstantTextboxType&#x000D;&#x000A;instantTextBoxType&#x000D;&#x000A;instantTextboxType&#x000D;&#x000A;layer&#x000D;&#x000A;LineChartType&#x000D;&#x000A;lineChartType&#x000D;&#x000A;listboxType&#x000D;&#x000A;listBoxType&#x000D;&#x000A;maskedShieldType&#x000D;&#x000A;modifier&#x000D;&#x000A;mult_modifier&#x000D;&#x000A;NAND&#x000D;&#x000A;NOR&#x000D;&#x000A;NOT&#x000D;&#x000A;objectTypes&#x000D;&#x000A;OR&#x000D;&#x000A;OverlappingElementsBoxType&#x000D;&#x000A;overlappingElementsBoxType&#x000D;&#x000A;pdxmesh&#x000D;&#x000A;pdxMesh&#x000D;&#x000A;positionType&#x000D;&#x000A;portraitType&#x000D;&#x000A;progressbartype&#x000D;&#x000A;progressbarType&#x000D;&#x000A;progressBarType&#x000D;&#x000A;scrollbarType&#x000D;&#x000A;scrollbartype&#x000D;&#x000A;scrollBarType&#x000D;&#x000A;shieldtype&#x000D;&#x000A;shieldType&#x000D;&#x000A;smoothListboxType&#x000D;&#x000A;smoothListBoxType&#x000D;&#x000A;spriteType&#x000D;&#x000A;spriteTypes&#x000D;&#x000A;song&#x000D;&#x000A;templates&#x000D;&#x000A;textBoxType&#x000D;&#x000A;textSpriteType&#x000D;&#x000A;texturedLineType&#x000D;&#x000A;texture&#x000D;&#x000A;textures&#x000D;&#x000A;weight&#x000D;&#x000A;windowType&#x000D;&#x000A;windowtype</Keywords>
+            <Keywords name="Keywords2">animation_rate_fps&#x000D;&#x000A;animation_time&#x000D;&#x000A;banned_colors&#x000D;&#x000A;borderSize&#x000D;&#x000A;center&#x000D;&#x000A;close_priority&#x000D;&#x000A;color&#x000D;&#x000A;colorcodes&#x000D;&#x000A;colorCodes&#x000D;&#x000A;colortwo&#x000D;&#x000A;colorTwo&#x000D;&#x000A;color_override&#x000D;&#x000A;cull_distance&#x000D;&#x000A;cursor&#x000D;&#x000A;defaultAnimationTime&#x000D;&#x000A;endAt&#x000D;&#x000A;eye_color&#x000D;&#x000A;eye_color_index&#x000D;&#x000A;hair_color&#x000D;&#x000A;hair_color_index&#x000D;&#x000A;headgear_that_hides_hair&#x000D;&#x000A;heading&#x000D;&#x000A;height&#x000D;&#x000A;hide_position&#x000D;&#x000A;horizontal&#x000D;&#x000A;interest_priority&#x000D;&#x000A;linewidth&#x000D;&#x000A;lineWidth&#x000D;&#x000A;maxheight&#x000D;&#x000A;maxHeight&#x000D;&#x000A;maxValue&#x000D;&#x000A;maxWidth&#x000D;&#x000A;maxwidth&#x000D;&#x000A;max_height&#x000D;&#x000A;minValue&#x000D;&#x000A;min_height&#x000D;&#x000A;moveable&#x000D;&#x000A;noOfFrames&#x000D;&#x000A;offset&#x000D;&#x000A;position&#x000D;&#x000A;positions&#x000D;&#x000A;priority&#x000D;&#x000A;rebel_colors&#x000D;&#x000A;rotation&#x000D;&#x000A;scale&#x000D;&#x000A;show_position&#x000D;&#x000A;size&#x000D;&#x000A;spacing&#x000D;&#x000A;startValue&#x000D;&#x000A;stepSize&#x000D;&#x000A;type&#x000D;&#x000A;uv_animation_speed&#x000D;&#x000A;value&#x000D;&#x000A;volume&#x000D;&#x000A;x&#x000D;&#x000A;y</Keywords>
+            <Keywords name="Keywords3">animation_type&#x000D;&#x000A;backGround&#x000D;&#x000A;background&#x000D;&#x000A;buttonFont&#x000D;&#x000A;buttonText&#x000D;&#x000A;category&#x000D;&#x000A;clicksound&#x000D;&#x000A;clickSound&#x000D;&#x000A;delayedTooltipText&#x000D;&#x000A;dontRender&#x000D;&#x000A;downsound&#x000D;&#x000A;downSound&#x000D;&#x000A;factor&#x000D;&#x000A;font&#x000D;&#x000A;fontname&#x000D;&#x000A;fontname_gui_scaled&#x000D;&#x000A;format&#x000D;&#x000A;hint_tag&#x000D;&#x000A;horizontalBorder&#x000D;&#x000A;id&#x000D;&#x000A;leftbutton&#x000D;&#x000A;leftButton&#x000D;&#x000A;loadType&#x000D;&#x000A;name&#x000D;&#x000A;Orientation&#x000D;&#x000A;orientation&#x000D;&#x000A;parent&#x000D;&#x000A;priority_shortcut&#x000D;&#x000A;pdx_tooltip&#x000D;&#x000A;pdx_tooltip_delayed&#x000D;&#x000A;religion&#x000D;&#x000A;religion_group&#x000D;&#x000A;rightbutton&#x000D;&#x000A;rightButton&#x000D;&#x000A;shortcut&#x000D;&#x000A;slider&#x000D;&#x000A;song_name&#x000D;&#x000A;sound&#x000D;&#x000A;text&#x000D;&#x000A;tooltip&#x000D;&#x000A;tooltipText&#x000D;&#x000A;track&#x000D;&#x000A;upsound&#x000D;&#x000A;upSound&#x000D;&#x000A;verticalBorder</Keywords>
+            <Keywords name="Keywords4">actorfile&#x000D;&#x000A;actorFile&#x000D;&#x000A;attack&#x000D;&#x000A;background_picture&#x000D;&#x000A;bodytexture&#x000D;&#x000A;bodyTexture&#x000D;&#x000A;effectFile&#x000D;&#x000A;file&#x000D;&#x000A;frame&#x000D;&#x000A;idle&#x000D;&#x000A;mask&#x000D;&#x000A;move&#x000D;&#x000A;picture&#x000D;&#x000A;quadTextureSprite&#x000D;&#x000A;seal_overlay&#x000D;&#x000A;texturefile&#x000D;&#x000A;textureFile&#x000D;&#x000A;textureFile1&#x000D;&#x000A;textureFile2</Keywords>
+            <Keywords name="Keywords5">allow_cancel&#x000D;&#x000A;always&#x000D;&#x000A;allwaystransparent&#x000D;&#x000A;alwaysTransparent&#x000D;&#x000A;alwaystransparent&#x000D;&#x000A;can_be_lowres&#x000D;&#x000A;click_to_front&#x000D;&#x000A;close_pause&#x000D;&#x000A;effect&#x000D;&#x000A;fixedsize&#x000D;&#x000A;fixedSize&#x000D;&#x000A;fullscreen&#x000D;&#x000A;fullScreen&#x000D;&#x000A;hide_frame&#x000D;&#x000A;hide_scrollbar&#x000D;&#x000A;interest_pause&#x000D;&#x000A;legacy_lazy_load&#x000D;&#x000A;letter_event&#x000D;&#x000A;looping&#x000D;&#x000A;message_log&#x000D;&#x000A;norefcount&#x000D;&#x000A;noRefCount&#x000D;&#x000A;on_demand&#x000D;&#x000A;play_on_show&#x000D;&#x000A;pausegame&#x000D;&#x000A;portrait_age&#x000D;&#x000A;portrait_clothing&#x000D;&#x000A;portrait_culture&#x000D;&#x000A;portrait_culture_group&#x000D;&#x000A;portrait_gfx_culture&#x000D;&#x000A;portrait_government&#x000D;&#x000A;portrait_has_trait&#x000D;&#x000A;portrait_in_command&#x000D;&#x000A;portrait_is_female&#x000D;&#x000A;portrait_is_patrician&#x000D;&#x000A;portrait_offmap&#x000D;&#x000A;portrait_religion&#x000D;&#x000A;portrait_society&#x000D;&#x000A;portrait_society_rank&#x000D;&#x000A;portrait_tier&#x000D;&#x000A;portrait_title_tier&#x000D;&#x000A;random&#x000D;&#x000A;scale_on_cull_distance&#x000D;&#x000A;show_in_settings&#x000D;&#x000A;take_events_when_disabled&#x000D;&#x000A;tilingCenter&#x000D;&#x000A;transparencecheck&#x000D;&#x000A;transparenceCheck&#x000D;&#x000A;use_animation&#x000D;&#x000A;use_special_chars</Keywords>
+            <Keywords name="Keywords6">no&#x000D;&#x000A;yes</Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8"></Keywords>
+            <Keywords name="Delimiters"></Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="C0C0C0" bgColor="000000" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="008080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="0080FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="800040" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="808080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="6A359F" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="00FFFF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="C0C0C0" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="008000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

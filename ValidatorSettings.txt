@@ -60,10 +60,24 @@ AddFlag = IgnoreFeb29Errors
 # to consider valid anyways.
 #(AddToEnum ReligionGroup) = { }
 
+# Sounds that for some reason don't appear in the files but that you want
+# to consider valid anyways.
+#(AddToEnum Sound) = { }
+
+# Traits that for some reason don't appear in the files but that you want
+# to consider valid anyways.
+#(AddToEnum Trait) = { }
+
 # DLC names that for some reason don't appear in the files but that you want
 # to consider valid anyways.
 #(AddToEnum Dlc) = { }
 
+# Disables scripted trigger duplicate id checking
+#AddFlag = DisableScriptedTriggerDuplicateIdChecking
+# Disables scripted effect duplicate id checking
+#AddFlag = DisableScriptedEffectDuplicateIdChecking
+# Disables scripted score value duplicate id checking
+#AddFlag = DisableScriptedScoreValueDuplicateIdChecking
 
 ###########################################
 # LOCALIZATION
@@ -143,6 +157,8 @@ AddFlag = Localization.IgnoreDuplicatesIfInVanilla
 # Disables checks that an event with hide_window=yes not have title, desc, picture, border, and option names.
 # So normally if a hide_window=yes has a title, Validator would warn about it. With this flag, it will not.
 #AddFlag = Events.DisableSpecialHideWindowChecks
+# Disable duplicate ID checking
+#AddFlag = Events.DisableDuplicateIdChecking
 
 ###########################################
 # DECISIONS
