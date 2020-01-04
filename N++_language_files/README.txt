@@ -1,4 +1,4 @@
-Instructions:
+=== Instructions: ===
 
 If you used previous versions by importing via "Language -> Define your language...", remove them there.
 Remove CK2.xml from "Notepad++/plugins/API".
@@ -10,7 +10,7 @@ Run Notepad++, open "Settings -> Preferences -> Auto-Completion" and check "Enab
 
 
 
-Which language highlighting to use:
+=== Which language highlighting to use: ===
 
 CK2
 All text files in
@@ -28,8 +28,10 @@ CK2Localisation - .csv files as well as customizable localisation .txt files
 
 CK2Graphics - .gui and .gfx files in both "interface" and "launcher/interface"
 
+CK2Save - uncompressed .ck2 save files - be sure to replace all '=' with ' = ' to make proper use of it. Extract compressed saves with your favourite archiving tool (WinRAR, 7-Zip, etc.)
 
 
-Other instructions
 
-You can disable the false positive highlighting of certain terms by unticking "Prefix mode" in "Language -> Define your language... -> CK2 -> Keywords Lists"
+=== Other instructions: ===
+
+You can disable the false positive highlighting of certain terms by unticking "Prefix mode" in "Language -> User Defined Language -> Define your language... -> CK2 -> Keywords Lists"
